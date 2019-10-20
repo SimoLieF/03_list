@@ -3,7 +3,7 @@ struct data{
     char num[5];
     //struct *front;
     //struct *back;
-}
+};
 int main(int argc, char *argv[]) 
 {
     struct data list[100];
