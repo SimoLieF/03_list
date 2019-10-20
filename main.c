@@ -12,17 +12,17 @@ int main(int argc, char *argv[])
     while(fgets(str, sizeof(str), stdin)){
         printf("%s", str);
         if(str=='0'){
-            for(int i=0;i<cnt;i++)
+            for(int i=0;i<=cnt;i++)
                 printf("%s,",list[i].num);
         }
         if(str=="-1"){
             printf("%s",list[cnt].num);
-            list->num=NULL;
+            sprintf(list[cnt].num,NULL);
             cnt--;
         }
         else{
+            sprintf(list[cnt+1].num, "%s", str);
             cnt++;
-            list->.num=str;
         }
     }
     return 0;
