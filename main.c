@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     char str[5];
     int cnt=0;
     while(fgets(str, sizeof(str), stdin)){
-        //printf("%s",str);
+        printf("%s",str);
         if(str=="0"){
             for(int i=cnt;i>=0;i--){
                 printf("%s",list[i].num);
