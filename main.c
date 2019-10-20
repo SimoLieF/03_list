@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
             }
             printf("\n");
         }
-        if(str==-1){
+        if(str=="-1"){
             printf("%s\n",list[cnt].num);
             sprintf(list[cnt].num,NULL);
             cnt--;
