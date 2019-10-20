@@ -23,5 +23,7 @@ int main(int argc, char *argv[])
         else{
             cnt++;
             list[cnt].num=str;
+        }
+    }
     return 0;
 }
