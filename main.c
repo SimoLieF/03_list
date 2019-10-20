@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include<stdlib.h>
+#include<string.h>
 struct data{
     char num[5];
     //struct *front;
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
         }
         if(str=="-1"){
             printf("%s\n",list[cnt].num);
-            sprintf(list[cnt].num,'\0');
+            memset(list[cnt].num,'\0',sizeof(list[cnt].num));
             cnt--;
         }
         else{
