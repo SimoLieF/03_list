@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     while(fgets(str, sizeof(str), stdin)){
         printf("%s",str);
         if(str=='0'){
-            for(int i=cnt;i>=0cnt;i--){
+            for(int i=cnt;i>=0;i--){
                 printf("%s",list[i].num);
                 if(i<cnt)
                     printf(",");
