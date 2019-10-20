@@ -12,8 +12,12 @@ int main(int argc, char *argv[])
     while(fgets(str, sizeof(str), stdin)){
         printf("%s",str);
         if(str=='0'){
-            for(int i=0;i<=cnt;i++)
-                printf("%s,",list[i].num);
+            for(int i=0;i<=cnt;i++){
+                printf("%s",list[i].num);
+                if(i<cnt)
+                    printf(",");
+            }
+            printf("\n");
         }
         if(str=="-1"){
             printf("%s\n",list[cnt].num);
