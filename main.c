@@ -17,12 +17,12 @@ int main(int argc, char *argv[])
         }
         if(str=="-1"){
             printf("%s",list[cnt].num);
-            list[cnt].num=NULL;
+            list->num=NULL;
             cnt--;
         }
         else{
             cnt++;
-            list[cnt].num=str;
+            list->.num=str;
         }
     }
     return 0;
