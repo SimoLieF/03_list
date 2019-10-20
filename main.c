@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
         }
         if(str=="-1"){
             printf("%s\n",list[cnt].num);
-            sprintf(list[cnt].num,NULL);
+            sprintf(list[cnt].num,'\0');
             cnt--;
         }
         else{
